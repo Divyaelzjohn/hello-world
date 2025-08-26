@@ -17,6 +17,7 @@ class Message extends Component {
   render(){
     return (
       <div>
+        <h1></h1>
         <h1>{this.state.message}</h1>
         <button onClick={()=>this.changeMessage()}>Subscribe</button>
       </div>
@@ -24,4 +25,3 @@ class Message extends Component {
   }
 }
 export default Message
-

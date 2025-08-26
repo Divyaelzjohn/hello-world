@@ -11,14 +11,13 @@ class EventBind extends Component {
   }
   // clickHandler(){
   //   this.setState({
-  //     message:'Good bye!'
+  //     message:'Good Bye!'
   //   })
-
   //   console.log(this)
-  // }
+  // }                        // o/p -> undefined  
 
   clickHandler=()=>{
-    this.setState({
+    this.setState({                         //class property using arrow function
       message:'Good Bye!'
     })
   }
@@ -26,9 +25,9 @@ class EventBind extends Component {
     return (
       <div>
         <div>{this.state.message}</div>
-        {/* <button onClick={this.clickHandler.bind(this)}>Click</button> */}
-        {/* <button onClick={()=>this.clickHandler()}>Click</button> */}
-        <button onClick={this.clickHandler}>Click</button>
+        {/* <button onClick={this.clickHandler.bind(this)}>Click</button>    binding */} 
+        {/* <button onClick={()=>this.clickHandler()}>Click</button>  arrow method */}
+        {/* <button onClick={this.clickHandler}>Click</button>     binding class constructor */}
       </div>
     )
   }

@@ -6,6 +6,7 @@ class Welcome extends Component {
     return <h1>Welcome {this.props.name} a.k.a {this.props.heroName}</h1>
   }*/
 
+    // using destructuring
   render(){
     const{name, heroName}=this.props
     // const{state1,state2}=this.state
@@ -15,3 +16,4 @@ class Welcome extends Component {
   }
 }
 export default Welcome
+

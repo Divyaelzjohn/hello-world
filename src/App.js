@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-// import {Greet} from './components/Greet';
-import Greet from './components/Greet';
+import {Greet} from './components/Greet';
+// import Greet from './components/Greet';
 import Welcome from './components/Welcome';
 import { Component } from 'react';
 import Hello from './components/Hello';
@@ -11,6 +11,13 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
+
+import './appStyles.css'
+import styles from './appStyles.module.css'
 
 // function App() {
 //   return (
@@ -20,11 +27,21 @@ import ParentComponent from './components/ParentComponent';
 //   );
 // }
 
+
+
 class App extends Component{
   render(){
     return(
       <div className="App">
-        <ParentComponent></ParentComponent>
+        <button className={styles.btn}>Click Me</button>
+        {/* <h1 className='error'>Error</h1>
+        <h1 className={styles.success}>Success</h1>*/}
+        {/* <Inline/>  */}
+        {/* <Stylesheet/> */}
+        {/* <Stylesheet primary={true}/> */}
+        {/* <NameList/> */}
+        {/* <UserGreeting/> */}
+        {/* <ParentComponent/> */}
         {/* <EventBind></EventBind> */}
         {/* <ClassClick></ClassClick> */}
         {/* <FunctionClick></FunctionClick> */}
@@ -40,8 +57,10 @@ class App extends Component{
         {/* <Welcome name="Clark" heroName="Superman"/> */}
         {/* <Welcome name="Diana" heroName="Wonder Woman"/> */}
         {/* <Hello/> */}
+        {/* i */}
       </div>
     )
+    
   }
 }
 
