@@ -24,5 +24,10 @@ class PureComp extends PureComponent {
       </h2>
     )
   }
+
+  // render(){
+  //   console.log("Profile rendered");
+  //   return <h2>{this.props.name}</h2>
+  // }
 }
 export default PureComp

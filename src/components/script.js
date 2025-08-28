@@ -43,4 +43,10 @@ static getDerivedStateFromError(error)
 componentDidCatch(error, info)           //When there is an error either during rendering , in a lifecycle method, or in the constructor of any child component.
 */
 
-
+/* 
+1.createRef method -> creating and accesing elements
+2.callback ref -> older approach 4 stage
+    -create a ref -create a property and assign a value null
+    -callback
+    -attach ref to an input element
+*/
