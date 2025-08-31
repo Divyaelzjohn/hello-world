@@ -22,3 +22,4 @@ class FRParentInput extends Component {
 }
 
 export default FRParentInput
+
