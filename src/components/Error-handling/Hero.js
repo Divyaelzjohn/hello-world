@@ -12,3 +12,4 @@ function Hero({heroName}) {
 }
 
 export default Hero
+
